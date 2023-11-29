@@ -9,9 +9,25 @@
 </head>
 <body>
 
+<header style="text-align: center">
+    <button class="hamburger-menu" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <svg width="150" height="40" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="#FFF"/>
+        <text x="4" y="27" font-family="Arial" font-size="25" fill="#333">{ &nbsp; &nbsp;}</text>
+        <text x="14" y="25" font-family="Arial" font-size="12" font-weight="700" fill="#333">CSS</text>
+        <text x="52" y="25" font-family="Arial" font-size="10" font-weight="500" fill="#333">VISUAL LEARNER</text>
+    </svg>
+</header>
+
 <div id="sidebar">
 
 </div>
+
 <div id="content">
 
     <div class="visualizer">
@@ -74,6 +90,7 @@
         <label for="container-width">Container Width:</label>
         <input type="range" id="container-width" min="100" max="1000" value="600">
         <button id="animate-width">Animate Width</button>
+        <button id="stop-animate-width">Stop Animation</button>
     </div>
 </div>
 
